@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.onlinebanking.controller.AdminFraudController"
+      spacing="15" style="-fx-padding: 20; -fx-background-color: #f5f7fa;">
+
+    <Label text="Fraud Detection & Alerts" styleClass="label-title"/>
+
+    <!-- Statistics Cards -->
+    <HBox spacing="15">
+        <!-- Flagged Cases -->
+        <VBox styleClass="card,panel-warning" style="-fx-min-width: 200; -fx-alignment: center; -fx-padding: 20;">
+            <Label text="FLAGGED CASES" style="-fx-text-fill: white; -fx-opacity: 0.8;"/>
+            <Label text="12" style="-fx-text-fill: white; -fx-font-size: 32; -fx-font-weight: bold;"/>
+            <Label text="Pending Review" style="-fx-text-fill: rgba(255,255,255,0.9);"/>
+        </VBox>
+
+        <!-- Confirmed Frauds -->
+        <VBox styleClass="card,panel-danger" style="-fx-min-width: 200; -fx-alignment: center; -fx-padding: 20;">
+            <Label text="CONFIRMED FRAUD" style="-fx-text-fill: white; -fx-opacity: 0.8;"/>
+            <Label text="3" style="-fx-text-fill: white; -fx-font-size: 32; -fx-font-weight: bold;"/>
+            <Label text="This Month" style="-fx-text-fill: rgba(255,255,255,0.9);"/>
+        </VBox>
+
+        <!-- High Risk Transactions -->
+        <VBox styleClass="card,panel-danger" style="-fx-min-width: 200; -fx-alignment: center; -fx-padding: 20;">
+            <Label text="HIGH RISK TXN" style="-fx-text-fill: white; -fx-opacity: 0.8;"/>
+            <Label text="₹2,34,500" style="-fx-text-fill: white; -fx-font-size: 24; -fx-font-weight: bold;"/>
+            <Label text="Total Amount" style="-fx-text-fill: rgba(255,255,255,0.9);"/>
+        </VBox>
+
+        <!-- False Positives -->
+        <VBox styleClass="card,panel-success" style="-fx-min-width: 200; -fx-alignment: center; -fx-padding: 20;">
+            <Label text="FALSE POSITIVES" style="-fx-text-fill: white; -fx-opacity: 0.8;"/>
+            <Label text="8" style="-fx-text-fill: white; -fx-font-size: 32; -fx-font-weight: bold;"/>
+            <Label text="Accuracy: 92%" style="-fx-text-fill: rgba(255,255,255,0.9);"/>
+        </VBox>
+
+        <Region HBox.hgrow="ALWAYS"/>
+    </HBox>
+
+    <TabPane tabClosingPolicy="UNAVAILABLE">
+        <!-- Flagged Cases Tab -->
+        <Tab text="Flagged Cases (12)" closable="false">
+            <VBox spacing="15" style="-fx-padding: 15;">
+                <!-- Case 1 - High Risk -->
+                <VBox styleClass="card,alert-danger" spacing="10">
+                    <HBox spacing="15">
+                        <VBox spacing="5" style="-fx-min-width: 200;">
+                            <Label text="FRD-2026-001234" style="-fx-font-weight: bold; -fx-font-size: 14; -fx-text-fill: #721c24;"/>
+                            <Label text="User: RAM KUMAR (ID: USR-00987)" style="-fx-text-fill: #721c24;"/>
+                            <Label text="Transaction: TXN-2026-045678" style="-fx-text-fill: #721c24;"/>
+                        </VBox>
+
+                        <VBox spacing="5">
+                            <Label text="Amount" style="-fx-text-fill: #721c24;"/>
+                            <Label text="₹75,000" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: #c0392b;"/>
+                        </VBox>
+
+                        <VBox spacing="5">
+                            <Label text="Risk Score" style="-fx-text-fill: #721c24;"/>
+                            <Label text="0.87 (HIGH)" style="-fx-font-size: 14; -fx-font-weight: bold; -fx-text-fill: #c0392b;"/>
+                        </VBox>
+
+                        <VBox spacing="5">
+                            <Label text="Detection Type" style="-fx-text-fill: #721c24;"/>
+                            <Label text="RULE_BASED" style="-fx-font-size: 12; -fx-text-fill: #721c24;"/>
+                        </VBox>
+
+                        <VBox spacing="5">
+                            <Label text="Flags" style="-fx-text-fill: #721c24;"/>
+                            <Label text="UNUSUAL_AMOUNT\nUNUSUAL_TIME" style="-fx-font-size: 11; -fx-text-fill: #721c24;"/>
+                        </VBox>
+
+                        <Region HBox.hgrow="ALWAYS"/>
+
+                        <VBox spacing="5" style="-fx-alignment: center-right;">
+                            <Label text="Flagged: 03-Apr 14:25" style="-fx-text-fill: #721c24; -fx-font-size: 11;"/>
+                            <HBox spacing="10">
+                                <Button text="Confirm" styleClass="button,button-danger"/>
+                                <Button text="False Positive" styleClass="button,button-secondary"/>
+                            </HBox>
+                        </VBox>
+                    </HBox>
+                </VBox>
+
+                <!-- Case 2 - Medium Risk -->
+                <VBox styleClass="card,alert-warning" spacing="10">
+                    <HBox spacing="15">
+                        <VBox spacing="5" style="-fx-min-width: 200;">
+                            <Label text="FRD-2026-001235" style="-fx-font-weight: bold; -fx-font-size: 14; -fx-text-fill: #856404;"/>
+                            <Label text="User: PRIYA SHARMA (ID: USR-00654)" style="-fx-text-fill: #856404;"/>
+                            <Label text="Transaction: TXN-2026-045679" style="-fx-text-fill: #856404;"/>
+                        </VBox>
+
+                        <VBox spacing="5">
+                            <Label text="Amount" style="-fx-text-fill: #856404;"/>
+                            <Label text="₹42,150" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: #f39c12;"/>
+                        </VBox>
+
+                        <VBox spacing="5">
+                            <Label text="Risk Score" style="-fx-text-fill: #856404;"/>
+                            <Label text="0.64 (MEDIUM)" style="-fx-font-size: 14; -fx-font-weight: bold; -fx-text-fill: #f39c12;"/>
+                        </VBox>
+
+                        <VBox spacing="5">
+                            <Label text="Detection Type" style="-fx-text-fill: #856404;"/>
+                            <Label text="RULE_BASED" style="-fx-font-size: 12; -fx-text-fill: #856404;"/>
+                        </VBox>
+
+                        <VBox spacing="5">
+                            <Label text="Flags" style="-fx-text-fill: #856404;"/>
+                            <Label text="UNUSUAL_AMOUNT" style="-fx-font-size: 11; -fx-text-fill: #856404;"/>
+                        </VBox>
+
+                        <Region HBox.hgrow="ALWAYS"/>
+
+                        <VBox spacing="5" style="-fx-alignment: center-right;">
+                            <Label text="Flagged: 02-Apr 22:10" style="-fx-text-fill: #856404; -fx-font-size: 11;"/>
+                            <HBox spacing="10">
+                                <Button text="Confirm" styleClass="button,button-danger"/>
+                                <Button text="False Positive" styleClass="button,button-secondary"/>
+                            </HBox>
+                        </VBox>
+                    </HBox>
+                </VBox>
+
+                <!-- Case 3 -->
+                <VBox styleClass="card,alert-warning" spacing="10">
+                    <HBox spacing="15">
+                        <VBox spacing="5" style="-fx-min-width: 200;">
+                            <Label text="FRD-2026-001236" style="-fx-font-weight: bold; -fx-font-size: 14; -fx-text-fill: #856404;"/>
+                            <Label text="User: AMIT PATEL (ID: USR-00521)" style="-fx-text-fill: #856404;"/>
+                            <Label text="Transaction: TXN-2026-045680" style="-fx-text-fill: #856404;"/>
+                        </VBox>
+
+                        <VBox spacing="5">
+                            <Label text="Amount" style="-fx-text-fill: #856404;"/>
+                            <Label text="₹18,900" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: #f39c12;"/>
+                        </VBox>
+
+                        <VBox spacing="5">
+                            <Label text="Risk Score" style="-fx-text-fill: #856404;"/>
+                            <Label text="0.55 (LOW-MEDIUM)" style="-fx-font-size: 14; -fx-font-weight: bold; -fx-text-fill: #f39c12;"/>
+                        </VBox>
+
+                        <VBox spacing="5">
+                            <Label text="Detection Type" style="-fx-text-fill: #856404;"/>
+                            <Label text="RULE_BASED" style="-fx-font-size: 12; -fx-text-fill: #856404;"/>
+                        </VBox>
+
+                        <VBox spacing="5">
+                            <Label text="Flags" style="-fx-text-fill: #856404;"/>
+                            <Label text="UNUSUAL_TIME" style="-fx-font-size: 11; -fx-text-fill: #856404;"/>
+                        </VBox>
+
+                        <Region HBox.hgrow="ALWAYS"/>
+
+                        <VBox spacing="5" style="-fx-alignment: center-right;">
+                            <Label text="Flagged: 01-Apr 02:45" style="-fx-text-fill: #856404; -fx-font-size: 11;"/>
+                            <HBox spacing="10">
+                                <Button text="Confirm" styleClass="button,button-danger"/>
+                                <Button text="False Positive" styleClass="button,button-secondary"/>
+                            </HBox>
+                        </VBox>
+                    </HBox>
+                </VBox>
+            </VBox>
+        </Tab>
+
+        <!-- Confirmed Fraud Tab -->
+        <Tab text="Confirmed Fraud (3)" closable="false">
+            <VBox spacing="15" style="-fx-padding: 15;">
+                <VBox styleClass="card,panel-danger" spacing="10">
+                    <HBox spacing="15">
+                        <VBox spacing="5">
+                            <Label text="FRD-2026-000845" style="-fx-font-weight: bold; -fx-font-size: 14; -fx-text-fill: white;"/>
+                            <Label text="User: JOHN DOE (ID: USR-00123)" style="-fx-text-fill: rgba(255,255,255,0.8);"/>
+                            <Label text="Amount: ₹1,20,000 | Confirmed: 28-Mar-2026" style="-fx-text-fill: rgba(255,255,255,0.9);"/>
+                        </VBox>
+                        <Region HBox.hgrow="ALWAYS"/>
+                        <Button text="View Details" styleClass="button,button-secondary"/>
+                    </HBox>
+                </VBox>
+            </VBox>
+        </Tab>
+
+        <!-- Analytics Tab -->
+        <Tab text="Analytics" closable="false">
+            <VBox spacing="15" style="-fx-padding: 15;">
+                <GridPane hgap="30" vgap="20">
+                    <Label text="Detection Accuracy" style="-fx-font-weight: bold;" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                    <Label text="92%" style="-fx-text-fill: #27ae60; -fx-font-weight: bold; -fx-font-size: 16;" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+                    <Label text="Avg Risk Score" styleClass="label-subtitle" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                    <Label text="0.68" styleClass="label-subtitle" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+                    <Label text="Total Cases (30 days)" styleClass="label-subtitle" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                    <Label text="23" styleClass="label-subtitle" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                </GridPane>
+            </VBox>
+        </Tab>
+    </TabPane>
+
+</VBox>

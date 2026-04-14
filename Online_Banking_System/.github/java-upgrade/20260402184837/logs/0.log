@@ -1,0 +1,106 @@
+2026-04-02T18:48:37.426Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-02T18:48:37.431Z [INFO] [Tool.invoke]({name: appmod-report-event, input: {
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "event": "precheckCompleted",
+  "phase": "precheck",
+  "status": "succeeded"
+}}).
+2026-04-02T18:48:37.435Z [INFO] [Tool.invoke] do invoke.
+2026-04-02T18:48:37.467Z [INFO] Project d:\SEM 6\OOAD\project1\Online_Banking_System is a maven project, try to get java version from pom.xml
+2026-04-02T18:48:37.488Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'precheckCompleted' reported!\nSession ID: 20260402184837,\nSession Dir: d:\\SEM 6\\OOAD\\project1\\Online_Banking_System\\.github\\java-upgrade\\20260402184837"
+}}).
+2026-04-02T18:48:37.491Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-04-02T18:48:37.517Z [INFO] Project java version: 25
+2026-04-02T18:48:37.521Z [INFO] Maven project detected.
+2026-04-02T18:48:37.523Z [INFO] Build tool type: mvn
+2026-04-02T18:48:44.830Z [INFO] JDK: {
+  "name": "java",
+  "path": "C:\\Users\\Darshan\\.jdk\\jdk-25\\bin",
+  "version": "25"
+}
+2026-04-02T18:48:45.877Z [INFO] Build tool: {
+  "name": "mvn",
+  "path": "C:\\Users\\Darshan\\.maven\\maven-3.9.14\\bin",
+  "version": "",
+  "source": "install"
+}
+2026-04-02T18:48:45.879Z [INFO] Project config: {
+  "buildTool": {
+    "path": "C:\\Users\\Darshan\\.maven\\maven-3.9.14\\bin",
+    "name": "mvn",
+    "version": "",
+    "source": "install"
+  },
+  "jdk": {
+    "path": "C:\\Users\\Darshan\\.jdk\\jdk-25\\bin",
+    "name": "java",
+    "version": "25"
+  },
+  "name": "Online_Banking_System",
+  "dir": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System"
+}
+2026-04-02T18:48:47.352Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-04-02T18:48:47.354Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "sessionId": "20260402184837",
+  "event": "planGenerationStarted",
+  "phase": "plan",
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "status": "succeeded"
+}}).
+2026-04-02T18:48:47.356Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-02T18:48:47.361Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-04-02T18:48:47.362Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-04-02T18:48:48.097Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-02T18:48:48.099Z [INFO] [Tool.invoke]({name: appmod-report-event, input: {
+  "sessionId": "20260402184837",
+  "event": "planGenerationStarted",
+  "phase": "plan",
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "status": "succeeded"
+}}).
+2026-04-02T18:48:48.101Z [INFO] [Tool.invoke] do invoke.
+2026-04-02T18:48:48.112Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planGenerationStarted' reported!\nSession ID: 20260402184837,\nSession Dir: d:\\SEM 6\\OOAD\\project1\\Online_Banking_System\\.github\\java-upgrade\\20260402184837"
+}}).
+2026-04-02T18:48:48.114Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-04-02T18:48:52.888Z [INFO] ---------------------prepare appmod-list-jdks----------------------
+2026-04-02T18:48:52.889Z [INFO] [Tool.prepareInvocation]({name: appmod-list-jdks, input: {
+  "sessionId": "20260402184837"
+}}).
+2026-04-02T18:48:52.891Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-02T18:48:52.893Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "List jdks"
+}}).
+2026-04-02T18:48:52.894Z [INFO] ----------------------prepared appmod-list-jdks----------------------
+2026-04-02T18:48:53.513Z [INFO] ----------------------invoke appmod-list-jdks----------------------
+2026-04-02T18:48:53.516Z [INFO] [Tool.invoke]({name: appmod-list-jdks, input: {
+  "sessionId": "20260402184837"
+}}).
+2026-04-02T18:48:53.518Z [INFO] [Tool.invoke] do invoke.
+2026-04-02T18:48:54.071Z [INFO] [Tool.invoke]({result: {
+  "message": "We found following jdks in your system:\n\n1. Java 21.0.8\n   📁 Path: C:\\Program Files\\Java\\jdk-21\\bin\n   🏷️ Source: PATH\n\n2. Java 25.0.2\n   📁 Path: C:\\Users\\Darshan\\.jdk\\jdk-25\\bin\n   🏷️ Source: install\n\nTotal: 2 JDK installation(s) found"
+}}).
+2026-04-02T18:48:54.073Z [INFO] ----------------------invoked appmod-list-jdks----------------------
+2026-04-02T18:48:54.124Z [INFO] ---------------------prepare appmod-list-mavens----------------------
+2026-04-02T18:48:54.126Z [INFO] [Tool.prepareInvocation]({name: appmod-list-mavens, input: {
+  "sessionId": "20260402184837",
+  "includeVersion": true
+}}).
+2026-04-02T18:48:54.127Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-02T18:48:54.129Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "List mavens"
+}}).
+2026-04-02T18:48:54.130Z [INFO] ----------------------prepared appmod-list-mavens----------------------
+2026-04-02T18:48:54.887Z [INFO] ----------------------invoke appmod-list-mavens----------------------
+2026-04-02T18:48:54.888Z [INFO] [Tool.invoke]({name: appmod-list-mavens, input: {
+  "sessionId": "20260402184837",
+  "includeVersion": true
+}}).
+2026-04-02T18:48:54.890Z [INFO] [Tool.invoke] do invoke.
+2026-04-02T18:49:00.285Z [INFO] [Tool.invoke]({result: {
+  "message": "We found following maven installations in your system:\n\n1. Maven \n   📁 Path: C:\\Users\\Darshan\\.maven\\maven-3.9.14\\bin\n   🏷️ Source: install\n\nTotal: 1 Maven installation(s) found"
+}}).
+2026-04-02T18:49:00.287Z [INFO] ----------------------invoked appmod-list-mavens----------------------

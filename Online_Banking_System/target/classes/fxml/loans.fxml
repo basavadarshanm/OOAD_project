@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.onlinebanking.controller.LoanController"
+      spacing="15" style="-fx-padding: 20; -fx-background-color: #f5f7fa;">
+
+    <!-- Header with Action -->
+    <HBox spacing="10" styleClass="card-header">
+        <Label text="Loans & EMI" styleClass="label-title"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button text="+ Apply for Loan" styleClass="button,button-secondary" onAction="#onApplyLoan"/>
+    </HBox>
+
+    <TabPane tabClosingPolicy="UNAVAILABLE">
+        <!-- Active Loans Tab -->
+        <Tab text="Active Loans" closable="false">
+            <VBox spacing="15" style="-fx-padding: 15;">
+                <!-- Loan Card 1 -->
+                <VBox styleClass="card" spacing="10">
+                    <HBox spacing="20">
+                        <VBox spacing="5" style="-fx-min-width: 200;">
+                            <Label text="Personal Loan" style="-fx-font-weight: bold; -fx-font-size: 15;"/>
+                            <Label text="Loan ID: LN-2024-00123" styleClass="label-subtitle"/>
+                            <Label text="Started: 15-Jan-2024" styleClass="label-subtitle"/>
+                        </VBox>
+                        <VBox spacing="5" HBox.hgrow="ALWAYS">
+                            <Label text="Principal Amount" styleClass="label-subtitle"/>
+                            <Label text="₹5,00,000" style="-fx-font-weight: bold; -fx-font-size: 16;"/>
+                        </VBox>
+                        <VBox spacing="5">
+                            <Label text="Interest Rate" styleClass="label-subtitle"/>
+                            <Label text="9.5% p.a." style="-fx-font-weight: bold; -fx-font-size: 16;"/>
+                        </VBox>
+                    </HBox>
+
+                    <Separator/>
+
+                    <!-- EMI Details -->
+                    <GridPane hgap="20" vgap="10">
+                        <Label text="Monthly EMI" style="-fx-font-weight: bold;" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                        <Label text="₹9,876" style="-fx-text-fill: #0066cc; -fx-font-weight: bold;" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+                        <Label text="Remaining Balance" styleClass="label-subtitle" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                        <Label text="₹4,25,000" styleClass="label-subtitle" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+                        <Label text="Months Paid" styleClass="label-subtitle" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+                        <Label text="15 of 60" styleClass="label-subtitle" GridPane.columnIndex="3" GridPane.rowIndex="0"/>
+
+                        <Label text="Status" styleClass="label-subtitle" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+                        <Label text="ACTIVE" styleClass="label-success" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+                    </GridPane>
+
+                    <!-- Progress Bar -->
+                    <VBox spacing="5">
+                        <Label text="Loan Progress (15/60 months)" styleClass="label-subtitle"/>
+                        <ProgressBar prefWidth="600" progress="0.25"/>
+                    </VBox>
+
+                    <!-- Action Buttons -->
+                    <HBox spacing="10">
+                        <Button text="Pay EMI" styleClass="button"/>
+                        <Button text="View Statement" styleClass="button,button-secondary"/>
+                        <Button text="Prepay Loan" styleClass="button,button-secondary"/>
+                    </HBox>
+                </VBox>
+
+                <!-- Loan Card 2 -->
+                <VBox styleClass="card" spacing="10">
+                    <HBox spacing="20">
+                        <VBox spacing="5" style="-fx-min-width: 200;">
+                            <Label text="Home Loan" style="-fx-font-weight: bold; -fx-font-size: 15;"/>
+                            <Label text="Loan ID: LN-2023-00089" styleClass="label-subtitle"/>
+                            <Label text="Started: 20-Mar-2023" styleClass="label-subtitle"/>
+                        </VBox>
+                        <VBox spacing="5" HBox.hgrow="ALWAYS">
+                            <Label text="Principal Amount" styleClass="label-subtitle"/>
+                            <Label text="₹25,00,000" style="-fx-font-weight: bold; -fx-font-size: 16;"/>
+                        </VBox>
+                        <VBox spacing="5">
+                            <Label text="Interest Rate" styleClass="label-subtitle"/>
+                            <Label text="6.5% p.a." style="-fx-font-weight: bold; -fx-font-size: 16;"/>
+                        </VBox>
+                    </HBox>
+
+                    <Separator/>
+
+                    <GridPane hgap="20" vgap="10">
+                        <Label text="Monthly EMI" style="-fx-font-weight: bold;" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                        <Label text="₹18,760" style="-fx-text-fill: #0066cc; -fx-font-weight: bold;" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+                        <Label text="Remaining Balance" styleClass="label-subtitle" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                        <Label text="₹22,35,000" styleClass="label-subtitle" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+                        <Label text="Months Paid" styleClass="label-subtitle" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+                        <Label text="24 of 360" styleClass="label-subtitle" GridPane.columnIndex="3" GridPane.rowIndex="0"/>
+
+                        <Label text="Status" styleClass="label-subtitle" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+                        <Label text="ACTIVE" styleClass="label-success" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+                    </GridPane>
+
+                    <VBox spacing="5">
+                        <Label text="Loan Progress (24/360 months)" styleClass="label-subtitle"/>
+                        <ProgressBar prefWidth="600" progress="0.067"/>
+                    </VBox>
+
+                    <HBox spacing="10">
+                        <Button text="Pay EMI" styleClass="button"/>
+                        <Button text="View Statement" styleClass="button,button-secondary"/>
+                        <Button text="Prepay Loan" styleClass="button,button-secondary"/>
+                    </HBox>
+                </VBox>
+            </VBox>
+        </Tab>
+
+        <!-- Pending Applications Tab -->
+        <Tab text="Pending Applications" closable="false">
+            <VBox spacing="15" style="-fx-padding: 15;">
+                <VBox styleClass="card" spacing="10">
+                    <HBox spacing="20">
+                        <VBox spacing="5">
+                            <Label text="Education Loan" style="-fx-font-weight: bold; -fx-font-size: 15;"/>
+                            <Label text="Applied: 01-Apr-2026" styleClass="label-subtitle"/>
+                        </VBox>
+                        <VBox spacing="5" HBox.hgrow="ALWAYS">
+                            <Label text="Applied Amount" styleClass="label-subtitle"/>
+                            <Label text="₹8,00,000" style="-fx-font-weight: bold; -fx-font-size: 16;"/>
+                        </VBox>
+                        <VBox spacing="5">
+                            <Label text="Status" styleClass="label-subtitle"/>
+                            <Label text="PENDING APPROVAL" style="-fx-text-fill: #f39c12; -fx-font-weight: bold;"/>
+                        </VBox>
+                    </HBox>
+
+                    <HBox spacing="10">
+                        <Button text="View Details" styleClass="button,button-secondary"/>
+                        <Button text="Cancel Application" styleClass="button,button-danger"/>
+                    </HBox>
+                </VBox>
+            </VBox>
+        </Tab>
+
+        <!-- Loan History Tab -->
+        <Tab text="History" closable="false">
+            <TableView prefHeight="400">
+                <columns>
+                    <TableColumn text="Loan Type" prefWidth="120"/>
+                    <TableColumn text="Amount" prefWidth="100"/>
+                    <TableColumn text="Rate" prefWidth="80"/>
+                    <TableColumn text="Duration" prefWidth="100"/>
+                    <TableColumn text="Status" prefWidth="100"/>
+                    <TableColumn text="Closed Date" prefWidth="120"/>
+                </columns>
+            </TableView>
+        </Tab>
+    </TabPane>
+
+</VBox>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.onlinebanking.controller.BillPaymentController"
+      spacing="15" style="-fx-padding: 20; -fx-background-color: #f5f7fa;">
+
+    <!-- Header with Quick Stats -->
+    <VBox spacing="10">
+        <HBox spacing="10">
+            <Label text="Bills & Payments" styleClass="label-title"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button text="+ Add Bill" styleClass="button,button-secondary" onAction="#onAddBill"/>
+        </HBox>
+
+        <!-- Quick Stats Cards -->
+        <HBox spacing="15">
+            <!-- Pending Bills -->
+            <VBox styleClass="card,panel-info" style="-fx-min-width: 200; -fx-alignment: center;">
+                <Label text="PENDING BILLS" style="-fx-text-fill: white; -fx-opacity: 0.8;"/>
+                <Label text="3" style="-fx-text-fill: white; -fx-font-size: 32; -fx-font-weight: bold;"/>
+                <Label text="Total: ₹12,500" style="-fx-text-fill: rgba(255,255,255,0.9);"/>
+            </VBox>
+
+            <!-- Overdue Bills -->
+            <VBox styleClass="card,panel-danger" style="-fx-min-width: 200; -fx-alignment: center;">
+                <Label text="OVERDUE BILLS" style="-fx-text-fill: white; -fx-opacity: 0.8;"/>
+                <Label text="1" style="-fx-text-fill: white; -fx-font-size: 32; -fx-font-weight: bold;"/>
+                <Label text="Total: ₹2,500" style="-fx-text-fill: rgba(255,255,255,0.9);"/>
+            </VBox>
+
+            <!-- Paid Bills -->
+            <VBox styleClass="card,panel-success" style="-fx-min-width: 200; -fx-alignment: center;">
+                <Label text="PAID BILLS" style="-fx-text-fill: white; -fx-opacity: 0.8;"/>
+                <Label text="28" style="-fx-text-fill: white; -fx-font-size: 32; -fx-font-weight: bold;"/>
+                <Label text="This Month: ₹8,750" style="-fx-text-fill: rgba(255,255,255,0.9);"/>
+            </VBox>
+
+            <Region HBox.hgrow="ALWAYS"/>
+        </HBox>
+    </VBox>
+
+    <TabPane tabClosingPolicy="UNAVAILABLE">
+        <!-- Pending Bills Tab -->
+        <Tab text="Pending Bills (3)" closable="false">
+            <VBox spacing="15" style="-fx-padding: 15;">
+                <!-- Bill 1 -->
+                <HBox spacing="20" styleClass="card">
+                    <VBox spacing="8" style="-fx-min-width: 200;">
+                        <Label text="Electricity Bill" style="-fx-font-weight: bold; -fx-font-size: 14;"/>
+                        <Label text="Power Supply Corp" styleClass="label-subtitle"/>
+                        <Label text="Consumer: ES-9876-54321" styleClass="label-subtitle"/>
+                    </VBox>
+
+                    <VBox spacing="8">
+                        <Label text="Bill Amount" styleClass="label-subtitle"/>
+                        <Label text="₹3,450" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #e74c3c;"/>
+                    </VBox>
+
+                    <VBox spacing="8">
+                        <Label text="Due Date" styleClass="label-subtitle"/>
+                        <Label text="15-Apr-2026" style="-fx-font-weight: bold;"/>
+                    </VBox>
+
+                    <VBox spacing="8">
+                        <Label text="Bill Date" styleClass="label-subtitle"/>
+                        <Label text="01-Apr-2026" styleClass="label-subtitle"/>
+                    </VBox>
+
+                    <VBox spacing="8">
+                        <Label text="Status" styleClass="label-subtitle"/>
+                        <Label text="PENDING" style="-fx-text-fill: #f39c12; -fx-font-weight: bold;"/>
+                    </VBox>
+
+                    <Region HBox.hgrow="ALWAYS"/>
+
+                    <HBox spacing="10" style="-fx-alignment: center-right;">
+                        <Button text="Pay Now" styleClass="button"/>
+                        <Button text="Set Reminder" styleClass="button,button-secondary"/>
+                    </HBox>
+                </HBox>
+
+                <!-- Bill 2 -->
+                <HBox spacing="20" styleClass="card">
+                    <VBox spacing="8" style="-fx-min-width: 200;">
+                        <Label text="Internet Bill" style="-fx-font-weight: bold; -fx-font-size: 14;"/>
+                        <Label text="FastNet Broadband" styleClass="label-subtitle"/>
+                        <Label text="Account: FB-5432109876" styleClass="label-subtitle"/>
+                    </VBox>
+
+                    <VBox spacing="8">
+                        <Label text="Bill Amount" styleClass="label-subtitle"/>
+                        <Label text="₹999" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #e74c3c;"/>
+                    </VBox>
+
+                    <VBox spacing="8">
+                        <Label text="Due Date" styleClass="label-subtitle"/>
+                        <Label text="10-Apr-2026" style="-fx-font-weight: bold;"/>
+                    </VBox>
+
+                    <VBox spacing="8">
+                        <Label text="Bill Date" styleClass="label-subtitle"/>
+                        <Label text="25-Mar-2026" styleClass="label-subtitle"/>
+                    </VBox>
+
+                    <VBox spacing="8">
+                        <Label text="Status" styleClass="label-subtitle"/>
+                        <Label text="PENDING" style="-fx-text-fill: #f39c12; -fx-font-weight: bold;"/>
+                    </VBox>
+
+                    <Region HBox.hgrow="ALWAYS"/>
+
+                    <HBox spacing="10" style="-fx-alignment: center-right;">
+                        <Button text="Pay Now" styleClass="button"/>
+                        <Button text="Set Reminder" styleClass="button,button-secondary"/>
+                    </HBox>
+                </HBox>
+
+                <!-- Bill 3 -->
+                <HBox spacing="20" styleClass="card">
+                    <VBox spacing="8" style="-fx-min-width: 200;">
+                        <Label text="Credit Card Bill" style="-fx-font-weight: bold; -fx-font-size: 14;"/>
+                        <Label text="ABC Credit Card" styleClass="label-subtitle"/>
+                        <Label text="Card: ****7654" styleClass="label-subtitle"/>
+                    </VBox>
+
+                    <VBox spacing="8">
+                        <Label text="Bill Amount" styleClass="label-subtitle"/>
+                        <Label text="₹8,051" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #e74c3c;"/>
+                    </VBox>
+
+                    <VBox spacing="8">
+                        <Label text="Due Date" styleClass="label-subtitle"/>
+                        <Label text="20-Apr-2026" style="-fx-font-weight: bold;"/>
+                    </VBox>
+
+                    <VBox spacing="8">
+                        <Label text="Bill Date" styleClass="label-subtitle"/>
+                        <Label text="05-Apr-2026" styleClass="label-subtitle"/>
+                    </VBox>
+
+                    <VBox spacing="8">
+                        <Label text="Status" styleClass="label-subtitle"/>
+                        <Label text="PENDING" style="-fx-text-fill: #f39c12; -fx-font-weight: bold;"/>
+                    </VBox>
+
+                    <Region HBox.hgrow="ALWAYS"/>
+
+                    <HBox spacing="10" style="-fx-alignment: center-right;">
+                        <Button text="Pay Now" styleClass="button"/>
+                        <Button text="Set Reminder" styleClass="button,button-secondary"/>
+                    </HBox>
+                </HBox>
+            </VBox>
+        </Tab>
+
+        <!-- Overdue Bills Tab -->
+        <Tab text="Overdue Bills (1)" closable="false">
+            <VBox spacing="15" style="-fx-padding: 15;">
+                <HBox spacing="20" styleClass="card,alert-danger">
+                    <VBox spacing="8" style="-fx-min-width: 200;">
+                        <Label text="Water Bill" style="-fx-font-weight: bold; -fx-font-size: 14; -fx-text-fill: #721c24;"/>
+                        <Label text="Water Board" styleClass="label-subtitle"/>
+                        <Label text="Consumer: WB-1234567" style="-fx-text-fill: #721c24;"/>
+                    </VBox>
+
+                    <VBox spacing="8">
+                        <Label text="Bill Amount" style="-fx-text-fill: #721c24;"/>
+                        <Label text="₹2,500" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: #721c24;"/>
+                    </VBox>
+
+                    <VBox spacing="8">
+                        <Label text="Due Date" style="-fx-text-fill: #721c24;"/>
+                        <Label text="25-Mar-2026" style="-fx-font-weight: bold; -fx-text-fill: #721c24;"/>
+                    </VBox>
+
+                    <VBox spacing="8">
+                        <Label text="Overdue Days" style="-fx-text-fill: #721c24;"/>
+                        <Label text="9 days" style="-fx-font-weight: bold; -fx-text-fill: #e74c3c;"/>
+                    </VBox>
+
+                    <VBox spacing="8">
+                        <Label text="Late Penalty" style="-fx-text-fill: #721c24;"/>
+                        <Label text="₹500" style="-fx-font-weight: bold; -fx-text-fill: #e74c3c;"/>
+                    </VBox>
+
+                    <Region HBox.hgrow="ALWAYS"/>
+
+                    <HBox spacing="10" style="-fx-alignment: center-right;">
+                        <Button text="Pay Now" styleClass="button,button-danger"/>
+                        <Button text="Details" styleClass="button,button-secondary"/>
+                    </HBox>
+                </HBox>
+            </VBox>
+        </Tab>
+
+        <!-- Payment History Tab -->
+        <Tab text="History" closable="false">
+            <TableView prefHeight="400">
+                <columns>
+                    <TableColumn text="Biller" prefWidth="150"/>
+                    <TableColumn text="Amount" prefWidth="100"/>
+                    <TableColumn text="Due Date" prefWidth="120"/>
+                    <TableColumn text="Paid Date" prefWidth="120"/>
+                    <TableColumn text="Reference" prefWidth="130"/>
+                    <TableColumn text="Status" prefWidth="100"/>
+                </columns>
+            </TableView>
+        </Tab>
+    </TabPane>
+
+</VBox>

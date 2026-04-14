@@ -1,0 +1,533 @@
+2026-04-02T06:28:55.613Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-02T06:28:55.614Z [INFO] [Tool.invoke]({name: appmod-report-event, input: {
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "event": "precheckCompleted",
+  "phase": "precheck",
+  "status": "succeeded"
+}}).
+2026-04-02T06:28:55.614Z [INFO] [Tool.invoke] do invoke.
+2026-04-02T06:28:55.622Z [INFO] Project d:\SEM 6\OOAD\project1\Online_Banking_System is a maven project, try to get java version from pom.xml
+2026-04-02T06:28:55.623Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'precheckCompleted' reported!\nSession ID: 20260402062855,\nSession Dir: d:\\SEM 6\\OOAD\\project1\\Online_Banking_System\\.github\\java-upgrade\\20260402062855"
+}}).
+2026-04-02T06:28:55.623Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-04-02T06:28:55.627Z [INFO] Project java version: 21
+2026-04-02T06:28:55.628Z [INFO] Maven project detected.
+2026-04-02T06:28:55.628Z [INFO] Build tool type: mvn
+2026-04-02T06:28:58.276Z [INFO] JDK: {
+  "name": "java",
+  "path": "C:\\Program Files\\Java\\jdk-21\\bin",
+  "version": "21"
+}
+2026-04-02T06:28:58.301Z [INFO] Build tool: undefined
+2026-04-02T06:28:58.302Z [ERROR] Failed to detect or resolve build tool for the project at d:\SEM 6\OOAD\project1\Online_Banking_System.
+2026-04-02T06:28:58.303Z [ERROR] [ReportEventTool] Failed to send project info telemetry: UserError: Failed to detect or resolve build tool for the project at d:\SEM 6\OOAD\project1\Online_Banking_System. Please ensure the build tool Maven is installed and properly configured on the machine.
+2026-04-02T06:29:01.941Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-04-02T06:29:01.942Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "sessionId": "20260402062855",
+  "event": "planGenerationStarted",
+  "phase": "plan",
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "status": "succeeded"
+}}).
+2026-04-02T06:29:01.942Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-02T06:29:01.943Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-04-02T06:29:01.943Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-04-02T06:29:02.086Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-02T06:29:02.086Z [INFO] [Tool.invoke]({name: appmod-report-event, input: {
+  "sessionId": "20260402062855",
+  "event": "planGenerationStarted",
+  "phase": "plan",
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "status": "succeeded"
+}}).
+2026-04-02T06:29:02.086Z [INFO] [Tool.invoke] do invoke.
+2026-04-02T06:29:02.087Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planGenerationStarted' reported!\nSession ID: 20260402062855,\nSession Dir: d:\\SEM 6\\OOAD\\project1\\Online_Banking_System\\.github\\java-upgrade\\20260402062855"
+}}).
+2026-04-02T06:29:02.087Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-04-02T06:29:02.103Z [INFO] ---------------------prepare appmod-list-jdks----------------------
+2026-04-02T06:29:02.103Z [INFO] [Tool.prepareInvocation]({name: appmod-list-jdks, input: {
+  "sessionId": "20260402062855"
+}}).
+2026-04-02T06:29:02.104Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-02T06:29:02.104Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "List jdks"
+}}).
+2026-04-02T06:29:02.105Z [INFO] ----------------------prepared appmod-list-jdks----------------------
+2026-04-02T06:29:02.201Z [INFO] ----------------------invoke appmod-list-jdks----------------------
+2026-04-02T06:29:02.201Z [INFO] [Tool.invoke]({name: appmod-list-jdks, input: {
+  "sessionId": "20260402062855"
+}}).
+2026-04-02T06:29:02.202Z [INFO] [Tool.invoke] do invoke.
+2026-04-02T06:29:02.220Z [INFO] [Tool.invoke]({result: {
+  "message": "We found following jdks in your system:\n\n1. Java 21.0.8\n   📁 Path: C:\\Program Files\\Java\\jdk-21\\bin\n   🏷️ Source: PATH\n\nTotal: 1 JDK installation(s) found"
+}}).
+2026-04-02T06:29:02.221Z [INFO] ----------------------invoked appmod-list-jdks----------------------
+2026-04-02T06:29:02.236Z [INFO] ---------------------prepare appmod-list-mavens----------------------
+2026-04-02T06:29:02.237Z [INFO] [Tool.prepareInvocation]({name: appmod-list-mavens, input: {
+  "sessionId": "20260402062855",
+  "includeVersion": true
+}}).
+2026-04-02T06:29:02.238Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-02T06:29:02.238Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "List mavens"
+}}).
+2026-04-02T06:29:02.239Z [INFO] ----------------------prepared appmod-list-mavens----------------------
+2026-04-02T06:29:02.369Z [INFO] ----------------------invoke appmod-list-mavens----------------------
+2026-04-02T06:29:02.369Z [INFO] [Tool.invoke]({name: appmod-list-mavens, input: {
+  "sessionId": "20260402062855",
+  "includeVersion": true
+}}).
+2026-04-02T06:29:02.369Z [INFO] [Tool.invoke] do invoke.
+2026-04-02T06:29:02.377Z [INFO] [Tool.invoke]({result: {
+  "message": "No Maven installations found."
+}}).
+2026-04-02T06:29:02.377Z [INFO] ----------------------invoked appmod-list-mavens----------------------
+2026-04-02T06:29:17.306Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-04-02T06:29:17.308Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "planInitialized",
+  "phase": "plan",
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "sessionId": "20260402062855",
+  "status": "succeeded"
+}}).
+2026-04-02T06:29:17.311Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-02T06:29:17.313Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-04-02T06:29:17.315Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-04-02T06:29:17.651Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-02T06:29:17.653Z [INFO] [Tool.invoke]({name: appmod-report-event, input: {
+  "event": "planInitialized",
+  "phase": "plan",
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "sessionId": "20260402062855",
+  "status": "succeeded"
+}}).
+2026-04-02T06:29:17.654Z [INFO] [Tool.invoke] do invoke.
+2026-04-02T06:29:17.657Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planInitialized' reported!\nSession ID: 20260402062855,\nSession Dir: d:\\SEM 6\\OOAD\\project1\\Online_Banking_System\\.github\\java-upgrade\\20260402062855"
+}}).
+2026-04-02T06:29:17.658Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-04-02T06:29:17.707Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-04-02T06:29:17.708Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "environmentAnalyzed",
+  "phase": "plan",
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "sessionId": "20260402062855",
+  "status": "succeeded"
+}}).
+2026-04-02T06:29:17.709Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-02T06:29:17.710Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-04-02T06:29:17.710Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-04-02T06:29:17.915Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-02T06:29:17.916Z [INFO] [Tool.invoke]({name: appmod-report-event, input: {
+  "event": "environmentAnalyzed",
+  "phase": "plan",
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "sessionId": "20260402062855",
+  "status": "succeeded"
+}}).
+2026-04-02T06:29:17.918Z [INFO] [Tool.invoke] do invoke.
+2026-04-02T06:29:17.921Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'environmentAnalyzed' reported!\nSession ID: 20260402062855,\nSession Dir: d:\\SEM 6\\OOAD\\project1\\Online_Banking_System\\.github\\java-upgrade\\20260402062855"
+}}).
+2026-04-02T06:29:17.922Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-04-02T06:29:17.964Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-04-02T06:29:17.965Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "dependenciesAnalyzed",
+  "phase": "plan",
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "sessionId": "20260402062855",
+  "status": "succeeded"
+}}).
+2026-04-02T06:29:17.967Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-02T06:29:17.969Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-04-02T06:29:17.971Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-04-02T06:29:18.180Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-02T06:29:18.181Z [INFO] [Tool.invoke]({name: appmod-report-event, input: {
+  "event": "dependenciesAnalyzed",
+  "phase": "plan",
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "sessionId": "20260402062855",
+  "status": "succeeded"
+}}).
+2026-04-02T06:29:18.182Z [INFO] [Tool.invoke] do invoke.
+2026-04-02T06:29:18.185Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'dependenciesAnalyzed' reported!\nSession ID: 20260402062855,\nSession Dir: d:\\SEM 6\\OOAD\\project1\\Online_Banking_System\\.github\\java-upgrade\\20260402062855"
+}}).
+2026-04-02T06:29:18.187Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-04-02T06:29:18.235Z [INFO] ---------------------prepare appmod-install-jdk----------------------
+2026-04-02T06:29:18.237Z [INFO] [Tool.prepareInvocation]({name: appmod-install-jdk, input: {
+  "sessionId": "20260402062855",
+  "version": "25"
+}}).
+2026-04-02T06:29:18.238Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-02T06:29:18.474Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Download and install JDK",
+  "confirmationMessages": {
+    "title": "Download and install JDK",
+    "message": "\nThis tool will download and install JDK 25 from Adoptium with below settings.\n- **Version**: 25\n- **Vendor**: Adoptium\n- **Url**: https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.2%2B10/OpenJDK25U-jdk_x64_windows_hotspot_25.0.2_10.zip\n- **Destination**: `C:\\Users\\Darshan\\.jdk`\n- **Checksum**: SHA256: 06ac5f5444a1269dd11d11cbb7ab6ebaecedc60dc1caca82cdb56f29100b7b8c\n- **Signature**: https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.2%2B10/OpenJDK25U-jdk_x64_windows_hotspot_25.0.2_10.zip.sig\n- **Public Key**: https://packages.adoptium.net/artifactory/api/gpg/key/public\n"
+  }
+}}).
+2026-04-02T06:29:18.475Z [INFO] ----------------------prepared appmod-install-jdk----------------------
+2026-04-02T06:29:24.302Z [INFO] ----------------------invoke appmod-install-jdk----------------------
+2026-04-02T06:29:24.303Z [INFO] [Tool.invoke]({name: appmod-install-jdk, input: {
+  "sessionId": "20260402062855",
+  "version": "25"
+}}).
+2026-04-02T06:29:24.303Z [INFO] [Tool.invoke] do invoke.
+2026-04-02T06:29:40.673Z [INFO] [Tool.invoke]({result: {
+  "result": {
+    "name": "java",
+    "path": "C:\\Users\\Darshan\\.jdk\\jdk-25\\bin",
+    "version": "25"
+  },
+  "message": "JDK 25 is installed at C:\\Users\\Darshan\\.jdk\\jdk-25\\bin",
+  "telemetry": {
+    "tool": "JDK",
+    "version": "25"
+  }
+}}).
+2026-04-02T06:29:40.674Z [INFO] ----------------------invoked appmod-install-jdk----------------------
+2026-04-02T06:29:42.308Z [INFO] ---------------------prepare appmod-install-maven----------------------
+2026-04-02T06:29:42.309Z [INFO] [Tool.prepareInvocation]({name: appmod-install-maven, input: {
+  "sessionId": "20260402062855",
+  "version": "3.9.11"
+}}).
+2026-04-02T06:29:42.311Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-02T06:29:43.365Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Download and install Maven",
+  "confirmationMessages": {
+    "title": "Download and install Maven",
+    "message": "\nThis tool will download and install Maven 3.9.11 from Apache with below settings.\n- **Version**: 3.9.11\n- **Vendor**: Apache\n- **Url**: https://dlcdn.apache.org/maven/maven-3/3.9.11/binaries/apache-maven-3.9.11-bin.zip\n- **Destination**: `C:\\Users\\Darshan\\.maven`\n- **Checksum**: SHA512: 03e2d65d4483a3396980629f260e25cac0d8b6f7f2791e4dc20bc83f9514db8d0f05b0479e699a5f34679250c49c8e52e961262ded468a20de0be254d8207076\n- **Signature**: https://dlcdn.apache.org/maven/maven-3/3.9.11/binaries/apache-maven-3.9.11-bin.zip.asc\n- **Public Key**: https://downloads.apache.org/maven/KEYS\n"
+  }
+}}).
+2026-04-02T06:29:43.365Z [INFO] ----------------------prepared appmod-install-maven----------------------
+2026-04-02T06:30:42.406Z [INFO] ----------------------invoke appmod-install-maven----------------------
+2026-04-02T06:30:42.406Z [INFO] [Tool.invoke]({name: appmod-install-maven, input: {
+  "sessionId": "20260402062855",
+  "version": "3.9.11"
+}}).
+2026-04-02T06:30:42.406Z [INFO] [Tool.invoke] do invoke.
+2026-04-02T06:30:45.485Z [ERROR] [Tool.invoke] error occurs when invoking tool appmod-install-maven: TypeError: fetch failed.
+2026-04-02T06:30:45.487Z [INFO] ----------------------invoked appmod-install-maven----------------------
+2026-04-02T06:30:54.470Z [INFO] ---------------------prepare appmod-install-maven----------------------
+2026-04-02T06:30:54.471Z [INFO] [Tool.prepareInvocation]({name: appmod-install-maven, input: {
+  "sessionId": "20260402062855",
+  "version": "latest"
+}}).
+2026-04-02T06:30:54.471Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-02T06:30:55.106Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Download and install Maven",
+  "confirmationMessages": {
+    "title": "Download and install Maven",
+    "message": "\nThis tool will download and install Maven latest from Apache with below settings.\n- **Version**: latest\n- **Vendor**: Apache\n- **Url**: https://dlcdn.apache.org/maven/maven-3/3.9.14/binaries/apache-maven-3.9.14-bin.zip\n- **Destination**: `C:\\Users\\Darshan\\.maven`\n- **Checksum**: SHA512: 4122c5e7a8794260539dd8fcd78480549511babff2f85e2b1258c8d4cf33c50af90f65d323f43c88d4959f35a8f37ced3eca802983caa6eb7cc81b16af936ab0\n- **Signature**: https://dlcdn.apache.org/maven/maven-3/3.9.14/binaries/apache-maven-3.9.14-bin.zip.asc\n- **Public Key**: https://downloads.apache.org/maven/KEYS\n"
+  }
+}}).
+2026-04-02T06:30:55.107Z [INFO] ----------------------prepared appmod-install-maven----------------------
+2026-04-02T06:30:55.279Z [INFO] ----------------------invoke appmod-install-maven----------------------
+2026-04-02T06:30:55.280Z [INFO] [Tool.invoke]({name: appmod-install-maven, input: {
+  "sessionId": "20260402062855",
+  "version": "latest"
+}}).
+2026-04-02T06:30:55.281Z [INFO] [Tool.invoke] do invoke.
+2026-04-02T06:30:58.396Z [INFO] [Tool.invoke]({result: {
+  "result": {
+    "name": "mvn",
+    "path": "C:\\Users\\Darshan\\.maven\\maven-3.9.14\\bin",
+    "version": "3.9.14"
+  },
+  "message": "Maven latest is installed at C:\\Users\\Darshan\\.maven\\maven-3.9.14\\bin",
+  "telemetry": {
+    "tool": "Maven",
+    "version": "latest"
+  }
+}}).
+2026-04-02T06:30:58.397Z [INFO] ----------------------invoked appmod-install-maven----------------------
+2026-04-02T06:33:37.025Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-04-02T06:33:37.026Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "upgradePathDesigned",
+  "phase": "plan",
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "sessionId": "20260402062855",
+  "status": "succeeded"
+}}).
+2026-04-02T06:33:37.026Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-02T06:33:37.027Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-04-02T06:33:37.027Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-04-02T06:33:37.194Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-02T06:33:37.195Z [INFO] [Tool.invoke]({name: appmod-report-event, input: {
+  "event": "upgradePathDesigned",
+  "phase": "plan",
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "sessionId": "20260402062855",
+  "status": "succeeded"
+}}).
+2026-04-02T06:33:37.195Z [INFO] [Tool.invoke] do invoke.
+2026-04-02T06:33:37.196Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'upgradePathDesigned' reported!\nSession ID: 20260402062855,\nSession Dir: d:\\SEM 6\\OOAD\\project1\\Online_Banking_System\\.github\\java-upgrade\\20260402062855"
+}}).
+2026-04-02T06:33:37.197Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-04-02T06:33:37.259Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-04-02T06:33:37.260Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "planReviewed",
+  "phase": "plan",
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "sessionId": "20260402062855",
+  "status": "succeeded"
+}}).
+2026-04-02T06:33:37.260Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-02T06:33:37.261Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-04-02T06:33:37.261Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-04-02T06:33:37.544Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-02T06:33:37.544Z [INFO] [Tool.invoke]({name: appmod-report-event, input: {
+  "event": "planReviewed",
+  "phase": "plan",
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "sessionId": "20260402062855",
+  "status": "succeeded"
+}}).
+2026-04-02T06:33:37.545Z [INFO] [Tool.invoke] do invoke.
+2026-04-02T06:33:37.546Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planReviewed' reported!\nSession ID: 20260402062855,\nSession Dir: d:\\SEM 6\\OOAD\\project1\\Online_Banking_System\\.github\\java-upgrade\\20260402062855"
+}}).
+2026-04-02T06:33:37.547Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-04-02T06:33:37.597Z [INFO] ---------------------prepare appmod-confirm-upgrade-plan----------------------
+2026-04-02T06:33:37.599Z [INFO] [Tool.prepareInvocation]({name: appmod-confirm-upgrade-plan, input: {
+  "sessionId": "20260402062855"
+}}).
+2026-04-02T06:33:37.600Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-02T06:33:37.612Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Review [upgrade plan](file:///d:/SEM 6/OOAD/project1/Online_Banking_System/.github/java-upgrade/20260402062855/plan.md)",
+  "confirmationMessages": {
+    "title": "Plan generated",
+    "message": "Please review the generated plan and make any necessary adjustments before proceeding. You can modify the generated [`plan.md`](file:///d:/SEM 6/OOAD/project1/Online_Banking_System/.github/java-upgrade/20260402062855/plan.md) directly."
+  }
+}}).
+2026-04-02T06:33:37.613Z [INFO] ----------------------prepared appmod-confirm-upgrade-plan----------------------
+2026-04-02T06:35:23.838Z [INFO] ----------------------invoke appmod-confirm-upgrade-plan----------------------
+2026-04-02T06:35:23.839Z [INFO] [Tool.invoke]({name: appmod-confirm-upgrade-plan, input: {
+  "sessionId": "20260402062855"
+}}).
+2026-04-02T06:35:23.839Z [INFO] [Tool.invoke] do invoke.
+2026-04-02T06:35:23.839Z [INFO] Upgrade plan confirmed successfully.
+2026-04-02T06:35:23.844Z [INFO] [Tool.invoke]({result: {
+  "message": "Generated plan is reviewed and confirmed by the user! the upgrade process will start now and be tracked in markdown file: d:\\SEM 6\\OOAD\\project1\\Online_Banking_System\\.github\\java-upgrade\\20260402062855\\progress.md."
+}}).
+2026-04-02T06:35:23.844Z [INFO] ----------------------invoked appmod-confirm-upgrade-plan----------------------
+2026-04-02T06:35:30.605Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-04-02T06:35:30.605Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "planExecutionStarted",
+  "phase": "execute",
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "sessionId": "20260402062855",
+  "status": "succeeded"
+}}).
+2026-04-02T06:35:30.605Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-02T06:35:30.606Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-04-02T06:35:30.606Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-04-02T06:35:30.847Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-02T06:35:30.848Z [INFO] [Tool.invoke]({name: appmod-report-event, input: {
+  "event": "planExecutionStarted",
+  "phase": "execute",
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "sessionId": "20260402062855",
+  "status": "succeeded"
+}}).
+2026-04-02T06:35:30.849Z [INFO] [Tool.invoke] do invoke.
+2026-04-02T06:35:31.335Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planExecutionStarted' reported!\nSession ID: 20260402062855,\nSession Dir: d:\\SEM 6\\OOAD\\project1\\Online_Banking_System\\.github\\java-upgrade\\20260402062855"
+}}).
+2026-04-02T06:35:31.336Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-04-02T06:39:19.305Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-04-02T06:39:19.332Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "environmentSetup",
+  "phase": "execute",
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "sessionId": "20260402062855",
+  "status": "succeeded",
+  "details": {
+    "jdkPath": "C:\\Users\\Darshan\\.jdk\\jdk-25",
+    "buildToolPath": "C:\\Users\\Darshan\\.maven\\maven-3.9.14\\bin"
+  }
+}}).
+2026-04-02T06:39:19.332Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-02T06:39:19.333Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-04-02T06:39:19.333Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-04-02T06:39:19.453Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-02T06:39:19.454Z [INFO] [Tool.invoke]({name: appmod-report-event, input: {
+  "event": "environmentSetup",
+  "phase": "execute",
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "sessionId": "20260402062855",
+  "status": "succeeded",
+  "details": {
+    "jdkPath": "C:\\Users\\Darshan\\.jdk\\jdk-25",
+    "buildToolPath": "C:\\Users\\Darshan\\.maven\\maven-3.9.14\\bin"
+  }
+}}).
+2026-04-02T06:39:19.454Z [INFO] [Tool.invoke] do invoke.
+2026-04-02T06:39:19.455Z [INFO] Project d:\SEM 6\OOAD\project1\Online_Banking_System is a maven project, try to get java version from pom.xml
+2026-04-02T06:39:19.457Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'environmentSetup' reported!\nSession ID: 20260402062855,\nSession Dir: d:\\SEM 6\\OOAD\\project1\\Online_Banking_System\\.github\\java-upgrade\\20260402062855"
+}}).
+2026-04-02T06:39:19.458Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-04-02T06:39:19.505Z [INFO] Project java version: 21
+2026-04-02T06:39:19.507Z [INFO] Build tool type detected from path: mvn
+2026-04-02T06:39:19.508Z [INFO] Build tool type: mvn
+2026-04-02T06:39:19.509Z [INFO] JDK: {
+  "name": "java",
+  "path": "C:\\Users\\Darshan\\.jdk\\jdk-25\\bin",
+  "version": "21"
+}
+2026-04-02T06:39:19.509Z [INFO] Build tool: {
+  "name": "mvn",
+  "path": "C:\\Users\\Darshan\\.maven\\maven-3.9.14\\bin",
+  "version": ""
+}
+2026-04-02T06:39:19.510Z [INFO] Project config: {
+  "buildTool": {
+    "path": "C:\\Users\\Darshan\\.maven\\maven-3.9.14\\bin",
+    "name": "mvn",
+    "version": ""
+  },
+  "jdk": {
+    "path": "C:\\Users\\Darshan\\.jdk\\jdk-25\\bin",
+    "name": "java",
+    "version": "21"
+  },
+  "name": "Online_Banking_System",
+  "dir": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System"
+}
+2026-04-02T06:40:22.302Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-04-02T06:40:22.305Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "baselineSetup",
+  "phase": "execute",
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "sessionId": "20260402062855",
+  "status": "succeeded"
+}}).
+2026-04-02T06:40:22.309Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-02T06:40:22.311Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-04-02T06:40:22.312Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-04-02T06:40:22.671Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-02T06:40:22.672Z [INFO] [Tool.invoke]({name: appmod-report-event, input: {
+  "event": "baselineSetup",
+  "phase": "execute",
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "sessionId": "20260402062855",
+  "status": "succeeded"
+}}).
+2026-04-02T06:40:22.673Z [INFO] [Tool.invoke] do invoke.
+2026-04-02T06:40:22.674Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'baselineSetup' reported!\nSession ID: 20260402062855,\nSession Dir: d:\\SEM 6\\OOAD\\project1\\Online_Banking_System\\.github\\java-upgrade\\20260402062855"
+}}).
+2026-04-02T06:40:22.675Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-04-02T06:41:52.024Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-04-02T06:41:52.059Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "upgradeValidationCompleted",
+  "phase": "execute",
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "sessionId": "20260402062855",
+  "status": "succeeded",
+  "details": {
+    "stepNumber": 5,
+    "stepTitle": "Final Validation",
+    "commitId": "188b08af5758bd129c1a135ea74ded263c7115f6"
+  }
+}}).
+2026-04-02T06:41:52.060Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-02T06:41:52.062Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-04-02T06:41:52.063Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-04-02T06:41:52.182Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-02T06:41:52.182Z [INFO] [Tool.invoke]({name: appmod-report-event, input: {
+  "event": "upgradeValidationCompleted",
+  "phase": "execute",
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "sessionId": "20260402062855",
+  "status": "succeeded",
+  "details": {
+    "stepNumber": 5,
+    "stepTitle": "Final Validation",
+    "commitId": "188b08af5758bd129c1a135ea74ded263c7115f6"
+  }
+}}).
+2026-04-02T06:41:52.183Z [INFO] [Tool.invoke] do invoke.
+2026-04-02T06:41:52.183Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'upgradeValidationCompleted' reported!\nSession ID: 20260402062855,\nSession Dir: d:\\SEM 6\\OOAD\\project1\\Online_Banking_System\\.github\\java-upgrade\\20260402062855"
+}}).
+2026-04-02T06:41:52.183Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-04-02T06:41:52.213Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-04-02T06:41:52.213Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "planExecutionCompleted",
+  "phase": "execute",
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "sessionId": "20260402062855",
+  "status": "succeeded"
+}}).
+2026-04-02T06:41:52.213Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-02T06:41:52.213Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-04-02T06:41:52.214Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-04-02T06:41:52.351Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-02T06:41:52.352Z [INFO] [Tool.invoke]({name: appmod-report-event, input: {
+  "event": "planExecutionCompleted",
+  "phase": "execute",
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "sessionId": "20260402062855",
+  "status": "succeeded"
+}}).
+2026-04-02T06:41:52.353Z [INFO] [Tool.invoke] do invoke.
+2026-04-02T06:41:52.359Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'planExecutionCompleted' reported!\nSession ID: 20260402062855,\nSession Dir: d:\\SEM 6\\OOAD\\project1\\Online_Banking_System\\.github\\java-upgrade\\20260402062855"
+}}).
+2026-04-02T06:41:52.359Z [INFO] ----------------------invoked appmod-report-event----------------------
+2026-04-02T06:43:22.524Z [INFO] ---------------------prepare appmod-report-event----------------------
+2026-04-02T06:43:22.527Z [INFO] [Tool.prepareInvocation]({name: appmod-report-event, input: {
+  "event": "summaryGenerated",
+  "phase": "summarize",
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "sessionId": "20260402062855",
+  "status": "succeeded",
+  "message": "Java 25 LTS upgrade completed successfully. All source code compiles to Java 25 bytecode with zero breaking changes. Application ready for production deployment after functional testing."
+}}).
+2026-04-02T06:43:22.528Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-02T06:43:22.530Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Report upgrade event"
+}}).
+2026-04-02T06:43:22.532Z [INFO] ----------------------prepared appmod-report-event----------------------
+2026-04-02T06:43:23.135Z [INFO] ----------------------invoke appmod-report-event----------------------
+2026-04-02T06:43:23.136Z [INFO] [Tool.invoke]({name: appmod-report-event, input: {
+  "event": "summaryGenerated",
+  "phase": "summarize",
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System",
+  "sessionId": "20260402062855",
+  "status": "succeeded",
+  "message": "Java 25 LTS upgrade completed successfully. All source code compiles to Java 25 bytecode with zero breaking changes. Application ready for production deployment after functional testing."
+}}).
+2026-04-02T06:43:23.137Z [INFO] [Tool.invoke] do invoke.
+2026-04-02T06:43:23.139Z [INFO] [Tool.invoke]({result: {
+  "message": "Event 'summaryGenerated' reported!\nSession ID: 20260402062855,\nSession Dir: d:\\SEM 6\\OOAD\\project1\\Online_Banking_System\\.github\\java-upgrade\\20260402062855"
+}}).
+2026-04-02T06:43:23.140Z [INFO] ----------------------invoked appmod-report-event----------------------

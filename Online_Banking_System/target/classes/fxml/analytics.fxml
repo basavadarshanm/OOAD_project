@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.onlinebanking.controller.AnalyticsController"
+      spacing="15" style="-fx-padding: 20; -fx-background-color: #f5f7fa;">
+
+    <Label text="Spending Analytics & Insights" styleClass="label-title"/>
+
+    <!-- Quick Summary Cards -->
+    <HBox spacing="15">
+        <!-- Total Spending -->
+        <VBox styleClass="card" style="-fx-min-width: 220; -fx-alignment: top-center; -fx-padding: 20;">
+            <Label text="Total Spending (This Month)" styleClass="label-subtitle"/>
+            <Label text="₹45,670" style="-fx-font-size: 28; -fx-font-weight: bold; -fx-text-fill: #e74c3c;"/>
+            <Label text="↑ 12% from last month" style="-fx-text-fill: #f39c12; -fx-font-weight: bold;"/>
+        </VBox>
+
+        <!-- Total Income -->
+        <VBox styleClass="card" style="-fx-min-width: 220; -fx-alignment: top-center; -fx-padding: 20;">
+            <Label text="Total Income" styleClass="label-subtitle"/>
+            <Label text="₹1,25,000" style="-fx-font-size: 28; -fx-font-weight: bold; -fx-text-fill: #27ae60;"/>
+            <Label text="↑ Fixed monthly" style="-fx-text-fill: #95a5a6;"/>
+        </VBox>
+
+        <!-- Net Savings -->
+        <VBox styleClass="card" style="-fx-min-width: 220; -fx-alignment: top-center; -fx-padding: 20;">
+            <Label text="Net Savings" styleClass="label-subtitle"/>
+            <Label text="₹79,330" style="-fx-font-size: 28; -fx-font-weight: bold; -fx-text-fill: #27ae60;"/>
+            <Label text="63.4% of income" style="-fx-text-fill: #95a5a6; -fx-font-weight: bold;"/>
+        </VBox>
+
+        <!-- Savings Goal -->
+        <VBox styleClass="card" style="-fx-min-width: 220; -fx-alignment: top-center; -fx-padding: 20;">
+            <Label text="Avg Transaction" styleClass="label-subtitle"/>
+            <Label text="₹7,422" style="-fx-font-size: 28; -fx-font-weight: bold; -fx-text-fill: #0066cc;"/>
+            <Label text="Across 28 txns" style="-fx-text-fill: #95a5a6;"/>
+        </VBox>
+
+        <Region HBox.hgrow="ALWAYS"/>
+    </HBox>
+
+    <!-- Spending by Category -->
+    <VBox styleClass="card" spacing="15">
+        <Label text="Spending by Category (This Month)" style="-fx-font-weight: bold; -fx-font-size: 16;"/>
+
+        <VBox spacing="12">
+            <!-- Food -->
+            <VBox spacing="5">
+                <HBox spacing="10">
+                    <Label text="🍔 Food & Dining" style="-fx-min-width: 150;"/>
+                    <Label text="₹8,500" HBox.hgrow="ALWAYS" style="-fx-alignment: center-right;"/>
+                    <Label text="18.6%" style="-fx-alignment: center-right; -fx-min-width: 50;"/>
+                </HBox>
+                <ProgressBar prefWidth="600" progress="0.186" style="-fx-control-inner-background: #FFE5E5;"/>
+            </VBox>
+
+            <!-- Transport -->
+            <VBox spacing="5">
+                <HBox spacing="10">
+                    <Label text="🚗 Transport" style="-fx-min-width: 150;"/>
+                    <Label text="₹5,200" HBox.hgrow="ALWAYS" style="-fx-alignment: center-right;"/>
+                    <Label text="11.4%" style="-fx-alignment: center-right; -fx-min-width: 50;"/>
+                </HBox>
+                <ProgressBar prefWidth="600" progress="0.114"/>
+            </VBox>
+
+            <!-- Entertainment -->
+            <VBox spacing="5">
+                <HBox spacing="10">
+                    <Label text="🎬 Entertainment" style="-fx-min-width: 150;"/>
+                    <Label text="₹3,450" HBox.hgrow="ALWAYS" style="-fx-alignment: center-right;"/>
+                    <Label text="7.5%" style="-fx-alignment: center-right; -fx-min-width: 50;"/>
+                </HBox>
+                <ProgressBar prefWidth="600" progress="0.075"/>
+            </VBox>
+
+            <!-- Shopping -->
+            <VBox spacing="5">
+                <HBox spacing="10">
+                    <Label text="🛍️  Shopping" style="-fx-min-width: 150;"/>
+                    <Label text="₹12,400" HBox.hgrow="ALWAYS" style="-fx-alignment: center-right;"/>
+                    <Label text="27.1%" style="-fx-alignment: center-right; -fx-min-width: 50;"/>
+                </HBox>
+                <ProgressBar prefWidth="600" progress="0.271"/>
+            </VBox>
+
+            <!-- Utilities -->
+            <VBox spacing="5">
+                <HBox spacing="10">
+                    <Label text="⚡ Utilities" style="-fx-min-width: 150;"/>
+                    <Label text="₹4,500" HBox.hgrow="ALWAYS" style="-fx-alignment: center-right;"/>
+                    <Label text="9.8%" style="-fx-alignment: center-right; -fx-min-width: 50;"/>
+                </HBox>
+                <ProgressBar prefWidth="600" progress="0.098"/>
+            </VBox>
+
+            <!-- Healthcare -->
+            <VBox spacing="5">
+                <HBox spacing="10">
+                    <Label text="🏥 Healthcare" style="-fx-min-width: 150;"/>
+                    <Label text="₹2,150" HBox.hgrow="ALWAYS" style="-fx-alignment: center-right;"/>
+                    <Label text="4.7%" style="-fx-alignment: center-right; -fx-min-width: 50;"/>
+                </HBox>
+                <ProgressBar prefWidth="600" progress="0.047"/>
+            </VBox>
+
+            <!-- Others -->
+            <VBox spacing="5">
+                <HBox spacing="10">
+                    <Label text="📦 Others" style="-fx-min-width: 150;"/>
+                    <Label text="₹3,470" HBox.hgrow="ALWAYS" style="-fx-alignment: center-right;"/>
+                    <Label text="7.6%" style="-fx-alignment: center-right; -fx-min-width: 50;"/>
+                </HBox>
+                <ProgressBar prefWidth="600" progress="0.076"/>
+            </VBox>
+        </VBox>
+    </VBox>
+
+    <!-- Monthly Trend & Insights -->
+    <HBox spacing="15">
+        <!-- Spending Trend -->
+        <VBox styleClass="card" style="-fx-min-width: 400; -fx-pref-width: 400;" spacing="15">
+            <Label text="6-Month Spending Trend" style="-fx-font-weight: bold; -fx-font-size: 16;"/>
+            <TableView prefHeight="200">
+                <columns>
+                    <TableColumn text="Month" prefWidth="100"/>
+                    <TableColumn text="Spending" prefWidth="120"/>
+                    <TableColumn text="Change" prefWidth="80"/>
+                </columns>
+            </TableView>
+        </VBox>
+
+        <!-- Smart Insights -->
+        <VBox styleClass="card,panel-info" style="-fx-min-width: 250; -fx-padding: 20;" spacing="10">
+            <Label text="💡 Smart Insights" style="-fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14;"/>
+            <Separator style="-fx-border-color: rgba(255,255,255,0.2);"/>
+            
+            <Label text="Excellent! You're saving more than 50% of your income. Keep up the good work!" 
+                   style="-fx-text-fill: white; -fx-wrap-text: true; -fx-font-size: 12;"/>
+            
+            <Separator style="-fx-border-color: rgba(255,255,255,0.2);"/>
+
+            <Label text="Top Spending Category:" style="-fx-text-fill: rgba(255,255,255,0.8); -fx-font-size: 11;"/>
+            <Label text="Shopping (27.1%)" style="-fx-text-fill: white; -fx-font-weight: bold;"/>
+
+            <Label text="Compare to Last Month:" style="-fx-text-fill: rgba(255,255,255,0.8); -fx-font-size: 11; -fx-padding-top: 10;"/>
+            <Label text="↑ 12% increase" style="-fx-text-fill: #ffe5b4; -fx-font-weight: bold;"/>
+        </VBox>
+    </HBox>
+
+</VBox>

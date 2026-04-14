@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.onlinebanking.controller.LoginController" style="-fx-background-color: linear-gradient(to right, #1e3c72, #2a5298);">
+    <center>
+        <VBox spacing="20" alignment="CENTER">
+            <padding><Insets top="40" right="40" bottom="40" left="40"/></padding>
+            
+            <!-- Main Card Container -->
+            <VBox spacing="20" style="-fx-background-color: white; -fx-border-radius: 10; -fx-background-radius: 10; -fx-padding: 30; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 5);">
+                
+                <!-- Header -->
+                <VBox spacing="5" alignment="CENTER">
+                    <Label text="🏦" style="-fx-font-size: 40px;" />
+                    <Label text="PREMIUM BANKING" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #1e3c72;" />
+                    <Label text="Secure Digital Banking Portal" style="-fx-font-size: 11px; -fx-text-fill: #7f8c8d; -fx-font-weight: normal;" />
+                </VBox>
+                
+                <!-- Divider -->
+                <Separator />
+                
+                <!-- Login Form -->
+                <VBox spacing="12" styleClass="login-form" style="-fx-background-color: #f8f9fa; -fx-border-radius: 8; -fx-padding: 20; -fx-border-color: #d0d7de; -fx-border-width: 1;">
+                    <TextField fx:id="usernameField" promptText="Username" styleClass="login-input" />
+                    <PasswordField fx:id="passwordField" promptText="Password" styleClass="login-input" />
+                </VBox>
+                
+                <!-- Buttons -->
+                <VBox spacing="10">
+                    <Button text="LOGIN NOW" onAction="#handleLogin" styleClass="login-button" style="-fx-padding: 14 20; -fx-font-size: 14px; -fx-font-weight: bold; -fx-min-width: 300;" />
+                    <Button text="Create Account" onAction="#handleShowRegister" styleClass="register-button" style="-fx-padding: 12 20;" />
+                </VBox>
+                
+                <!-- Messages -->
+                <VBox spacing="8">
+                    <Label fx:id="errorLabel" textFill="#e74c3c" wrapText="true" style="-fx-font-weight: bold;" />
+                    <Label fx:id="infoLabel" textFill="#27ae60" wrapText="true" style="-fx-font-weight: bold;" />
+                </VBox>
+                
+                <!-- Demo Credentials Hint -->
+                <VBox spacing="8" style="-fx-background-color: #fffbea; -fx-border-color: #ffc107; -fx-border-radius: 8; -fx-padding: 15; -fx-border-width: 1;">
+                    <Label text="📌 DEMO ACCOUNT" style="-fx-font-weight: bold; -fx-text-fill: #1e3c72; -fx-font-size: 11px;" />
+                    <Label text="Username: demo" style="-fx-font-size: 11px; -fx-text-fill: #2c3e50;" />
+                    <Label text="Password: password123" style="-fx-font-size: 11px; -fx-text-fill: #2c3e50;" />
+                </VBox>
+            </VBox>
+        </VBox>
+    </center>
+</BorderPane>

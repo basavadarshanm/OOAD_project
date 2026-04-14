@@ -1,0 +1,80 @@
+2026-04-14T15:56:55.077Z [INFO] ----------------------invoke appmod-build-java-project----------------------
+2026-04-14T15:56:55.079Z [INFO] [Tool.invoke]({name: appmod-build-java-project, input: {
+  "projectPath": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System"
+}}).
+2026-04-14T15:56:55.080Z [INFO] [Tool.invoke] do invoke.
+2026-04-14T15:56:55.083Z [INFO] Project d:\SEM 6\OOAD\project1\Online_Banking_System is a maven project, try to get java version from pom.xml
+2026-04-14T15:56:55.094Z [INFO] Project java version: 21
+2026-04-14T15:56:55.097Z [INFO] Maven project detected.
+2026-04-14T15:56:55.098Z [INFO] Build tool type: mvn
+2026-04-14T15:56:55.882Z [INFO] JDK: {
+  "name": "java",
+  "path": "C:\\Program Files\\Java\\jdk-21\\bin",
+  "version": "21"
+}
+2026-04-14T15:56:55.999Z [INFO] Build tool: {
+  "name": "mvn",
+  "path": "C:\\Users\\Darshan\\.maven\\maven-3.9.14\\bin",
+  "version": "",
+  "source": "install"
+}
+2026-04-14T15:56:56.000Z [INFO] Project config: {
+  "buildTool": {
+    "path": "C:\\Users\\Darshan\\.maven\\maven-3.9.14\\bin",
+    "name": "mvn",
+    "version": "",
+    "source": "install"
+  },
+  "jdk": {
+    "path": "C:\\Program Files\\Java\\jdk-21\\bin",
+    "name": "java",
+    "version": "21"
+  },
+  "name": "Online_Banking_System",
+  "dir": "d:\\SEM 6\\OOAD\\project1\\Online_Banking_System"
+}
+2026-04-14T15:56:56.006Z [INFO] [MavenBuildTool] Getting build errors of d:\SEM 6\OOAD\project1\Online_Banking_System using Maven
+2026-04-14T15:56:56.008Z [INFO] [Environment] Running command (Java undefined): mvn clean test-compile -q -B -fn -Dossindex.skip=true -Dlicense.skip=true -Dcheckstyle.skip=true -DskipLicenseCheck=true -DskipCheckStyle=true -Dpmd.skip=true -Denforcer.skip=true -Drat.skip=true
+'mvn' is not recognized as an internal or external command,
+operable program or batch file.
+2026-04-14T15:56:56.197Z [WARN] Initial mvn clean compile failed, attempting mvn clean install to fix dependency errors.
+2026-04-14T15:56:56.198Z [INFO] [MavenBuildTool] Getting build errors of d:\SEM 6\OOAD\project1\Online_Banking_System using Maven
+2026-04-14T15:56:56.199Z [INFO] [Environment] Running command (Java undefined): mvn clean install -DskipTests -Dgpg.skip -Ddockerfile.skip -q -B -fn -Dossindex.skip=true -Dlicense.skip=true -Dcheckstyle.skip=true -DskipLicenseCheck=true -DskipCheckStyle=true -Dpmd.skip=true -Denforcer.skip=true -Drat.skip=true
+'mvn' is not recognized as an internal or external command,
+operable program or batch file.
+2026-04-14T15:56:56.311Z [INFO] [Environment] Running command (Java undefined): mvn clean test-compile -q -B -fn -Dossindex.skip=true -Dlicense.skip=true -Dcheckstyle.skip=true -DskipLicenseCheck=true -DskipCheckStyle=true -Dpmd.skip=true -Denforcer.skip=true -Drat.skip=true
+'mvn' is not recognized as an internal or external command,
+operable program or batch file.
+2026-04-14T15:56:56.489Z [INFO] [MavenBuildTool] parsing compilation errors.
+2026-04-14T15:56:56.498Z [INFO] [MavenBuildTool] Getting all module coordinates of d:\SEM 6\OOAD\project1\Online_Banking_System
+2026-04-14T15:56:56.501Z [INFO] [MavenBuildTool] Getting effective POMs of d:\SEM 6\OOAD\project1\Online_Banking_System
+2026-04-14T15:56:56.503Z [INFO] [Environment] Running command (Java undefined): mvn help:effective-pom -Doutput=effective-pom-762b78c5-6e7b-4865-83aa-83c4c73d0ce1.log
+'mvn' is not recognized as an internal or external command,
+operable program or batch file.
+2026-04-14T15:56:56.698Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open 'd:\SEM 6\OOAD\project1\Online_Banking_System\effective-pom-762b78c5-6e7b-4865-83aa-83c4c73d0ce1.log'
+2026-04-14T15:56:56.699Z [INFO] [BaseBuildTool] Found 0 modules: 
+2026-04-14T15:56:56.700Z [INFO] [BaseBuildTool] Finish counting Java and class files
+2026-04-14T15:56:56.703Z [INFO] [MavenBuildTool] Cleaning d:\SEM 6\OOAD\project1\Online_Banking_System using Maven
+2026-04-14T15:56:56.705Z [INFO] [Environment] Running command (Java undefined): mvn clean -q -B -fn
+'mvn' is not recognized as an internal or external command,
+operable program or batch file.
+2026-04-14T15:56:56.897Z [INFO] [MavenBuildTool] Getting all module coordinates of d:\SEM 6\OOAD\project1\Online_Banking_System
+2026-04-14T15:56:56.898Z [INFO] [MavenBuildTool] Getting effective POMs of d:\SEM 6\OOAD\project1\Online_Banking_System
+2026-04-14T15:56:56.899Z [INFO] Build succeeded! There are no build errors in the project.
+2026-04-14T15:56:56.900Z [INFO] [Environment] Running command (Java undefined): mvn help:effective-pom -Doutput=effective-pom-6d2dc5f0-1949-46a4-8867-607608af5c75.log
+2026-04-14T15:56:56.937Z [INFO] [Tool.invoke]({result: {
+  "message": "Build succeeded! There are no build errors in the project.",
+  "result": {
+    "numOfJavaFiles": 0,
+    "numOfClassFiles": 0,
+    "errors": [],
+    "command": "mvn clean test-compile -q -B -fn -Dossindex.skip=true -Dlicense.skip=true -Dcheckstyle.skip=true -DskipLicenseCheck=true -DskipCheckStyle=true -Dpmd.skip=true -Denforcer.skip=true -Drat.skip=true"
+  },
+  "telemetry": {
+    "result": "succeeded"
+  }
+}}).
+2026-04-14T15:56:56.938Z [INFO] ----------------------invoked appmod-build-java-project----------------------
+'mvn' is not recognized as an internal or external command,
+operable program or batch file.
+2026-04-14T15:56:57.760Z [INFO] [MavenBuildTool] Failed to get effective POMs: Error: ENOENT: no such file or directory, open 'd:\SEM 6\OOAD\project1\Online_Banking_System\effective-pom-6d2dc5f0-1949-46a4-8867-607608af5c75.log'

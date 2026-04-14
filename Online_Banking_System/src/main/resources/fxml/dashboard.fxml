@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.onlinebanking.controller.DashboardController" style="-fx-background-color: #f5f7fa;">
+    <!-- HEADER -->
+    <top>
+        <VBox spacing="0" style="-fx-background-color: linear-gradient(to right, #1e3c72, #2a5298);">
+            <!-- Top Nav Bar -->
+            <HBox spacing="20" alignment="CENTER_LEFT" style="-fx-background-color: linear-gradient(to right, #1e3c72, #2a5298); -fx-padding: 15 25; -fx-text-fill: white;">
+                <Label text="🏦 PREMIUM BANKING" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: white;" />
+                <Region HBox.hgrow="ALWAYS" />
+                <Label fx:id="welcomeLabel" text="Welcome" style="-fx-font-size: 12px; -fx-text-fill: rgba(255,255,255,0.9);" />
+                <Button text="🔄 Refresh" onAction="#handleRefresh" styleClass="nav-button" />
+                <Button text="🚪 Logout" onAction="#handleLogout" styleClass="nav-button" />
+            </HBox>
+            
+            <!-- Account Selection Card -->
+            <HBox spacing="15" alignment="CENTER_LEFT" style="-fx-background-color: white; -fx-padding: 18 25; -fx-border-color: #d0d7de; -fx-border-width: 0 0 1 0;">
+                <Label text="Select Account:" style="-fx-font-size: 12px; -fx-font-weight: bold; -fx-text-fill: #1e3c72;" />
+                <ComboBox fx:id="accountComboBox" onAction="#handleAccountSelection" prefWidth="350" style="-fx-padding: 8 12; -fx-border-color: #1e3c72; -fx-border-radius: 4;" />
+                <Region HBox.hgrow="ALWAYS" />
+                <Label fx:id="balanceLabel" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #27ae60;" />
+            </HBox>
+        </VBox>
+    </top>
+
+    <!-- MAIN CONTENT -->
+    <center>
+        <ScrollPane fitToWidth="true" style="-fx-background-color: #f5f7fa; -fx-padding: 0;">
+            <VBox spacing="20" style="-fx-padding: 25;">
+                
+                <!-- Account Details Card -->
+                <VBox styleClass="info-card" style="-fx-background-color: white; -fx-border-color: #d0d7de; -fx-border-radius: 8; -fx-border-width: 1; -fx-padding: 20;">
+                    <Label text="Account Details" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #1e3c72; -fx-padding: 0 0 15 0;" />
+                    <HBox spacing="60">
+                        <VBox spacing="5">
+                            <Label text="Account Number" styleClass="info-label" />
+                            <Label fx:id="accountNumberLabel" text="Not selected" styleClass="info-value" />
+                        </VBox>
+                        <VBox spacing="5">
+                            <Label text="Account Type" styleClass="info-label" />
+                            <Label fx:id="accountTypeLabel" text="-" styleClass="info-value" />
+                        </VBox>
+                        <VBox spacing="5">
+                            <Label text="Available Balance" styleClass="info-label" />
+                            <Label fx:id="accountBalanceLabel" text="$0.00" styleClass="account-balance" />
+                        </VBox>
+                        <VBox spacing="5">
+                            <Label text="Status" styleClass="info-label" />
+                            <Label fx:id="accountStatusLabel" text="-" styleClass="info-value" />
+                        </VBox>
+                    </HBox>
+                </VBox>
+
+                <!-- Recent Transactions -->
+                <VBox spacing="12" styleClass="section-card">
+                    <Label text="📋 Recent Transactions" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #1e3c72;" />
+                    <ListView fx:id="transactionsList" prefHeight="180" styleClass="transactions-list" />
+                </VBox>
+
+                <!-- Two Column Layout for Actions -->
+                <HBox spacing="25">
+                    <!-- LEFT COLUMN: Transfer & Bill Payment -->
+                    <VBox spacing="20" HBox.hgrow="ALWAYS">
+                <!-- Transfer Card -->
+                        <VBox spacing="12" styleClass="action-card" style="-fx-background-color: white; -fx-border-color: #d0d7de; -fx-border-radius: 8; -fx-border-width: 1; -fx-padding: 20; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 3, 0, 0, 1);">
+                            <Label text="💸 Transfer Funds" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #1e3c72;" />
+                            <TextField fx:id="transferToField" promptText="Recipient Account Number" styleClass="text-field" />
+                            <TextField fx:id="transferAmountField" promptText="Amount" styleClass="text-field" />
+                            <TextField fx:id="transferDescriptionField" promptText="Description (Optional)" styleClass="text-field" />
+                            <Button text="Send Transfer" onAction="#handleTransfer" styleClass="action-button" />
+                        </VBox>
+
+                        <!-- Bill Payment Card -->
+                        <VBox spacing="12" styleClass="action-card" style="-fx-background-color: white; -fx-border-color: #d0d7de; -fx-border-radius: 8; -fx-border-width: 1; -fx-padding: 20; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 3, 0, 0, 1);">
+                            <Label text="💳 Pay Bill" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #1e3c72;" />
+                            <TextField fx:id="billerField" promptText="Biller Name" styleClass="text-field" />
+                            <TextField fx:id="billAmountField" promptText="Amount" styleClass="text-field" />
+                            <Button text="Pay Bill" onAction="#handleBillPay" styleClass="action-button" />
+                        </VBox>
+                    </VBox>
+
+                    <!-- RIGHT COLUMN: Add Beneficiary -->
+                    <VBox spacing="20" HBox.hgrow="ALWAYS">
+                        <VBox spacing="12" styleClass="action-card" style="-fx-background-color: white; -fx-border-color: #d0d7de; -fx-border-radius: 8; -fx-border-width: 1; -fx-padding: 20; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 3, 0, 0, 1);">
+                            <Label text="👥 Add Beneficiary" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #1e3c72;" />
+                            <TextField fx:id="beneficiaryNameField" promptText="Beneficiary Name" styleClass="text-field" />
+                            <TextField fx:id="beneficiaryAccountField" promptText="Account Number" styleClass="text-field" />
+                            <TextField fx:id="beneficiaryBankField" promptText="Bank Name" styleClass="text-field" />
+                            <Button text="Add Beneficiary" onAction="#handleAddBeneficiary" styleClass="action-button" />
+                        </VBox>
+
+                        <!-- Status Messages -->
+                        <VBox styleClass="status-card" style="-fx-background-color: #f8f9fa; -fx-border-color: #d0d7de; -fx-border-radius: 8; -fx-border-width: 1; -fx-padding: 20;">
+                            <Label fx:id="statusLabel" text="" wrapText="true" style="-fx-font-size: 12px; -fx-text-fill: #34495e;" />
+                        </VBox>
+                    </VBox>
+                </HBox>
+            </VBox>
+        </ScrollPane>
+    </center>
+</BorderPane>
